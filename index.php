@@ -351,114 +351,14 @@ echo <<<HEAD
 <body>
 HEAD;
 
-// Quelques parties
-$partieVide = array( 
-	array(0,0,0, 0,0,0, 0,0,0),
-	array(0,0,0, 0,0,0, 0,0,0),
-	array(0,0,0, 0,0,0, 0,0,0),
-
-	array(0,0,0, 0,0,0, 0,0,0),
-	array(0,0,0, 0,0,0, 0,0,0),
-	array(0,0,0, 0,0,0, 0,0,0),
-
-	array(0,0,0, 0,0,0, 0,0,0),
-	array(0,0,0, 0,0,0, 0,0,0),
-	array(0,0,0, 0,0,0, 0,0,0),
-);
-
-// difficulté moyenne
-$partie1 = array( 
-	array(1,0,3, 0,0,5, 7,0,0),
-	array(0,7,5, 0,9,0, 1,3,0),
-	array(0,0,8, 7,1,0, 5,0,9),
-
-	array(3,0,0, 0,0,8, 0,0,0),
-	array(0,0,2, 0,0,0, 4,0,0),
-	array(0,0,0, 6,0,0, 0,0,2),
-
-	array(2,0,4, 0,6,9, 8,0,0),
-	array(0,3,6, 0,4,0, 2,9,0),
-	array(0,0,7, 1,0,0, 3,0,4),
-);
-
-// difficile
-$partie2 = array( 
-	array(0,9,0, 0,0,3, 0,1,0),
-	array(2,0,8, 0,0,7, 3,0,0),
-	array(4,0,0, 0,0,0, 5,8,0),
-
-	array(0,0,4, 5,0,8, 0,0,0),
-	array(0,8,0, 9,0,1, 0,7,0),
-	array(0,0,0, 7,0,2, 4,0,0),
-
-	array(0,4,6, 0,0,0, 0,0,2),
-	array(0,0,9, 6,0,0, 8,0,1),
-	array(0,2,0, 3,0,0, 0,5,0),
-);
-
-// difficile
-$partie3 = array( 
-	array(0,0,0, 0,0,0, 0,7,1),
-	array(0,0,0, 5,6,0, 3,4,8),
-	array(0,0,8, 0,3,0, 6,5,0),
-
-	array(0,6,0, 0,0,4, 0,0,3),
-	array(0,8,2, 0,0,0, 1,6,0),
-	array(3,0,0, 6,0,0, 0,2,0),
-
-	array(0,4,3, 0,9,0, 2,0,0),
-	array(1,9,7, 0,2,6, 0,0,0),
-	array(8,2,0, 0,0,0, 0,0,0),
-);
-$partie4 = array( 
-	array(2,0,0, 4,0,6, 0,7,0),
-	array(0,0,4, 0,0,2, 0,0,0),
-	array(1,5,0, 9,7,0, 0,0,0),
-
-	array(0,3,0, 0,6,0, 4,0,0),
-	array(7,0,1, 0,4,0, 9,0,3),
-	array(0,0,8, 0,9,0, 0,1,0),
-
-	array(0,0,0, 0,5,4, 0,2,9),
-	array(0,0,0, 7,0,0, 8,0,0),
-	array(0,2,0, 6,0,9, 0,0,1),
-);
-	
-// speciale anti-algorythm
-$partie5 = array( 
-	array(9,0,0, 1,0,4, 0,0,2),
-	array(0,8,0, 0,6,0, 0,7,0),
-	array(0,0,0, 0,0,0, 0,0,0),
-
-	array(4,0,0, 0,0,0, 0,0,1),
-	array(0,7,0, 0,0,0, 0,3,0),
-	array(3,0,0, 0,0,0, 0,0,7),
-
-	array(0,0,0, 0,0,0, 0,0,0),
-	array(0,3,0, 0,7,0, 0,8,0),
-	array(1,0,0, 2,0,9, 0,0,4),
-);
-$partie6 = array( 
-	array(0,0,0, 0,2,5, 0,0,0),
-	array(0,0,0, 0,0,7, 3,0,0),
-	array(0,0,0, 0,0,0, 4,8,0),
-
-	array(0,0,0, 0,0,0, 0,5,9),
-	array(7,0,0, 0,0,0, 0,0,2),
-	array(3,8,0, 0,0,0, 0,0,0),
-
-	array(0,9,5, 0,0,0, 0,0,0),
-	array(0,0,1, 6,0,0, 0,0,0),
-	array(0,0,0, 8,3,0, 0,0,0),
-);
-
+// Array à tester
 $partieSG = array( 
-	array(0,0,0, 0,0,0, 0,0,0),
-	array(0,0,0, 0,0,0, 0,0,0),
-	array(0,0,0, 0,0,0, 0,0,0),
+	array(1,9,7, 0,0,0, 0,0,0),
+	array(8,6,4, 0,0,0, 0,0,0),
+	array(2,5,3, 0,0,0, 0,0,0),
 
 	array(0,0,0, 0,0,0, 0,0,0),
-	array(0,0,0, 0,0,0, 0,0,0),
+	array(3,1,0, 0,0,0, 0,0,0),
 	array(0,0,0, 0,0,0, 0,0,0),
 
 	array(0,0,0, 0,0,0, 0,0,0),
@@ -466,6 +366,20 @@ $partieSG = array(
 	array(0,0,0, 0,0,0, 0,0,0),
 );
 
+// Test tableau différent
+/*
+tableau = [
+	line1 = [1,2,3,4,5,6,7,8,9]
+	line2 = [1,2,3,4,5,6,7,8,9]
+	line3 = [1,2,3,4,5,6,7,8,9]
+	line4 = [1,2,3,4,5,6,7,8,9]
+	line5 = [1,2,3,4,5,6,7,8,9]
+	line6 = [1,2,3,4,5,6,7,8,9]
+	line7 = [1,2,3,4,5,6,7,8,9]
+	line8 = [1,2,3,4,5,6,7,8,9]
+	line9 = [1,2,3,4,5,6,7,8,9]
+];
+ */
 
 $partie = new sudokuResolver();
 // Changer le nom de la variable dans la ligne suivante pour essayer un 
@@ -481,7 +395,7 @@ $situationSure = array($partie->valeur, $partie->possible);
 $i=0;
 $nbHypothese=$nbProbleme=0;
 while (true) {
-	// On commence par ne rechercher que les case calculés par pur raisonnement
+	// On commence par ne rechercher que les cases calculées par pur raisonnement
 	$ok = $partie->resoudreLogique();
 
 	// si c'est terminé, c'est gagné
@@ -518,6 +432,6 @@ if ($partie->termine()) {
 	$partie->affiche(true);
 }
 
-echo "<p>Copyright Lo&iuml;c Dayot, (janvier 2010) - licence CeCILL</p>";
+echo "<p>&copy; Sigri44, 2019 - licence CeCILL</p>";
 echo "</body>\n</html>\n";
 ?>
